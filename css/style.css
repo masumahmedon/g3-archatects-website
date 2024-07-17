@@ -115,6 +115,45 @@ main{
   font-weight: 500;
 }
 /* feature section end */
+/* feature section-2 start */
+.feature-2{
+  gap: 140px;
+}
+#feature-section-2{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+
+}
+.feature-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+}
+.feature-architect img{
+  width: 100%;
+
+}
+.feature-card,.feature-title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#experance-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left:-100px;
+  margin-top: -100px;
+}
+#experance-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* feature section-2 end */
 /* Some Facts style start */
 .facts-container{
   display: grid;
@@ -176,6 +215,7 @@ main{
           } 
         .feature-img,
         .facts-container,
+        .feature-2,
         .Sponspor-companies{
           display: grid;
           grid-template-columns: repeat(1,1fr);
@@ -191,11 +231,16 @@ main{
         }
         .feature-content{
           margin-left: 20px;
-        }         
+        }
+        
+        #experance-badge{
+          margin-left:20px;
+          margin-top: 20px;
+        }      
 }
 /* medium size devices */
 @media screen and (min-width: 576px) and (max-width:992px) {
-        .feature{
+        .feature, .feature-2{
           flex-direction: column;
         }
         .feature-content{
@@ -209,6 +254,10 @@ main{
           gap: 50px;
           justify-items: center;
         }
+        #experance-badge{
+          margin-left:20px;
+          margin-top: 20px;
+        }  
           
 }
 /* responsive media query start */
