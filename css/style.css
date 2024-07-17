@@ -144,6 +144,20 @@ main{
   margin-top: 10px;
 }
 /* Some Facts style end */
+/* Our Sponspors style start */
+.Sponspors-info {
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.Sponspor-companies{
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
+}
+.Sponspor-companies{
+  filter: grayscale(100%);
+}
+/* Our Sponspors style end */
 /* main section end */
 
 
@@ -160,13 +174,20 @@ main{
           .brand{
             font-size:2rem;
           } 
-        .feature-img,.facts-container{
+        .feature-img,
+        .facts-container,
+        .Sponspor-companies{
           display: grid;
           grid-template-columns: repeat(1,1fr);
         }
         .facts-container{
           justify-items: center;
           gap: 24px;
+        }
+        .Sponspor-companies{
+          
+          justify-items: center;
+          gap: 50px;
         }
         .feature-content{
           margin-left: 20px;
@@ -179,6 +200,14 @@ main{
         }
         .feature-content{
           margin: 50px auto;
+        }
+        
+        .Sponspor-companies, 
+        .facts-container{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 50px;
+          justify-items: center;
         }
           
 }
